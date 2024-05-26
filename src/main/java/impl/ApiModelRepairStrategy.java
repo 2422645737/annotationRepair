@@ -7,6 +7,8 @@ import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class ApiModelRepairStrategy implements RepairStrategy {
@@ -30,7 +32,12 @@ public class ApiModelRepairStrategy implements RepairStrategy {
 
         }
         //处理有ApiModel注解，但是注解不规范的情况
-
-        writeFile(newContent.toString(),file);
+        String commentRegex = "@ApiModel\\(\\s*\"([^\"]+)\"\\)";
+        String regexResult = "@ApiModel(description = \"$1\")";
+        Pattern pattern = Pattern.compile(commentRegex);
+        Matcher matcher = pattern.matcher(newContent.toString());
+        String result = matcher.replaceAll(regexResult);
+        result = result.trim();
+        writeFile(result,file);
     }
 }

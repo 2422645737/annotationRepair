@@ -27,17 +27,23 @@ public class ApiModelPropertyRepairStrategy implements RepairStrategy {
             newContent.insert(indexOfImport,"import io.swagger.annotations.ApiModelProperty;\n");
         }
 
-        //匹配包含注释的属性
-        String commentRegex = "";
-        //Files.lines(Paths.get("E:\\Project\\ideaPro\\SourceCode\\src\\main\\resources\\regexStr")).collect(Collectors.joining(System.lineSeparator()));
-        //属性替换原则
-        String regexResult = "$1\n\t@ApiModelProperty(value = \"$2\")\n\tprivate";
+        //处理没有ApiModelProperty注解的情况
+        String commentRegex = "(}|;)\\s*((private|protected|public)?\\s+([a-z]|[A-Z]|>|<)+\\s+(([a-z]|[A-Z])+)\\s*;)";
+        String regexResult = "$1\\n\\t@ApiModelProperty(value = \"$5\")\\n\\t$2";
         Pattern pattern = Pattern.compile(commentRegex);
         Matcher matcher = pattern.matcher(newContent.toString());
         String result = matcher.replaceAll(regexResult);
         result = result.trim();
 
+        //处理ApiModelProperty(hidden = true)的情况
+        commentRegex = "(\\/\\*\\*\\n *\\*([^\\n]*)\\n *\\*\\/)\\n\\s*@ApiModelProperty\\(hidden\\s=\\strue\\)";
+        regexResult = "$1\\n\\t@ApiModelProperty(value = \"$2\",hidden = true)";
+        pattern = Pattern.compile(commentRegex);
+        matcher = pattern.matcher(result);
+        result = matcher.replaceAll(regexResult);
+        result = result.trim();
 
+        //处理ApiModelProperty("")
         writeFile(result,file);
     }
 }
