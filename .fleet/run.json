@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "maven",
+            "name": "Maven configuration",
+            "tasks": [],
+        },
+        {
+            "type": "jps-build",
+            "name": "Jps-build configuration",
+        },
+        
+    ]
+}

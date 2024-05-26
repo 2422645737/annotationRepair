@@ -1,0 +1,452 @@
+(\/\*\*\n *\*([^\n]*)\n *\*\/)\n\s*private
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.TitleRegistClassController [method]getDefaultRegistClassByPostTitleId [parameter]postTitleId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.TitleRegistClassController [method]getAllowRegistClassByPostTitleId [parameter]postTitleId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.TitleRegistClassController [method]getDefaultRegistClassByUserSysId [parameter]userSysId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.TitleRegistClassController [method]getAllowRegistClassByUserSysId [parameter]patId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.MaterialController [method]queryStock [parameter]deptId: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.UserController [method]getUserIdentityById [parameter]userSysId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.UserController [method]getUserById [parameter]userId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.UserController [method]findApps [parameter]hospitalId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.UserController [method]findApps [parameter]userId: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.UserController [method]getUserByIdentityId [parameter]userSysId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.DictController [method]queryAll [parameter]dictParam [field]type: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.DictController [method]findDictEpsItemInfo [parameter]dictEpsItemTypeId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.DictController [method]findDictPrescriptionReason [parameter]searchName: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.MenuController [method]getMenuInfo [parameter]userSysId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.ResourceController [method]findDrugType [parameter]orderCategoryId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.DeptController [method]getDeptById [parameter]deptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.DeptController [method]findDeptTreeByHospitalId [parameter]hospitalId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.DeptController [method]findDeptByUnitDeptId [parameter]unitDeptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.DeptController [method]getPharmacyInfoById: @ApiOperation annotation is not standardized [value, notes required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.DeptController [method]getPharmacyInfoById [parameter]deptId: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.DeptController [method]getPharmacyInfoById [return]com.msun.his.app.mzemr.server.comm.entity.dto.DeptPharmacyDeptInfoDTO: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.RegisterClassController [method]getRegisterClassByHospitalId [parameter]patId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.EmergencyTreatmentController [method]getDict [parameter]typeCodeOrNames: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.comm.controller.OrderTemplateController [method]findTemClass [return]com.msun.his.app.mzemr.server.comm.entity.vo.TemClassTreeVo [field]remark: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.docconfig.controller.DocConfigController [method]selectFrequency [parameter]docConfig: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.docconfig.controller.DocConfigController [method]selectUsage [parameter]docConfig: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.templates.controller.MrTemplatesController [method]findTemplateContent: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.templates.controller.MrTemplatesController [method]findTemplateContent: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.templates.controller.MrTemplatesController [method]updateTemplateById: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.templates.controller.MrTemplatesController [method]delTemplateById: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.templates.controller.MrTemplatesController [method]pasteTemplate: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.mrkeel.controller.MrKeelsController [method]queryMrkeelById: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.headerfooter.controller.MzEmrHeaderFooterController [method]getEmrHeaderFooterById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.nodes.controller.MrNodesController [method]getEmrMrNodesById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.nodes.controller.MrNodesController [method]findNodes: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.nodes.controller.MrNodesController [method]findAllChildNodes [parameter]sexLimit: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.recommend.controller.MrTemplateRecommendController [method]saveTemplateFrequency: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.recommend.controller.MrTemplateRecommendController [method]saveTemplateFrequency: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.recommend.controller.MrTemplateRecommendController [method]saveTemplateFrequency: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.recommend.controller.MrTemplateRecommendController [method]saveTemplateFrequency: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.recommend.controller.MrTemplateRecommendController [method]saveTemplateFrequency: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.recommend.controller.MrTemplateRecommendController [method]saveTemplateFrequency: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mzrecord.recommend.controller.MrTemplateRecommendController [method]delTemplateFrequency: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalinsurance.controller.MedicalInsuranceController [method]getMedicalCategory [return]com.msun.his.app.mzemr.server.medicalinsurance.entity.vo.InsurDictAndTypeVO [field]flagMzZy: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalinsurance.controller.MedicalInsuranceController [method]queryByDictType [parameter]dictType: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecordreview.controller.MedicalRecordReviewController [method]getHistoryMedicalRecord [return]com.msun.his.app.mzemr.server.medicalrecordreview.entity.vo.MedicalRecordReviewVO [field]allergenRecordDTOList: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecordreview.controller.MedicalRecordReviewController [method]getMedicalRecordReviewById [parameter]patId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecordreview.controller.MedicalRecordReviewController [method]getMedicalRecordReviewById [return]com.msun.his.app.mzemr.server.medicalrecordreview.entity.vo.MedicalRecordReviewVO [field]allergenRecordDTOList: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecordreview.controller.MedicalRecordReviewController [method]findForMedicom [return]com.msun.his.app.mzemr.server.medicalrecordreview.entity.vo.MedicalRecordReviewVO [field]allergenRecordDTOList: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecordreview.controller.MedicalRecordReviewController [method]getBedUseInfoGroupByWard [parameter]wardId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecordreview.controller.MedicalRecordReviewController [method]getHistoryMedicalRecordText [return]com.msun.his.app.mzemr.server.medicalrecordreview.entity.vo.MedicalRecordReviewVO [field]allergenRecordDTOList: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.ApplyFormController [method]selectComboMealApply [parameter]comboMealApplyCommand [field]limit: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getPatientApply [parameter]applyInfoCommand [field]startTime: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getPatientApply [parameter]applyInfoCommand [field]endTime: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]queryPrintInfoByAppointId [return]com.msun.his.app.mzemr.server.manage.entity.vo.MzAppointmentInfoVO [field]cancelType: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]queryPrintInfoByAppointId [return]com.msun.his.app.mzemr.server.manage.entity.vo.MzAppointmentInfoVO [field]cancelTypeName: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findReformPharmacyDeptInfo [parameter]deptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findRecipeId [parameter]deptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findPharmacyDeptId [parameter]deptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findPharmacyDeptInfo [parameter]deptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getOutPresInfoForQuote [parameter]outPresId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getOutTreateInfoForQuote [parameter]outTreateId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getLatestGangaPresInfo [parameter]patId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getSignDocOrderList [return]com.msun.his.app.mzemr.server.outorder.entity.vo.OutDocSignOrderAndStatusInfoVO [field]signTime: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getSignDocOrderList [return]com.msun.his.app.mzemr.server.outorder.entity.vo.OutDocSignOrderAndStatusInfoVO [field]cancelTime: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getSignDocOrderList [return]com.msun.his.app.mzemr.server.outorder.entity.vo.OutDocSignOrderAndStatusInfoVO [field]insertTime: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getSignRepeatItem [return]com.msun.his.app.mzemr.server.outorder.entity.vo.SignRepeatItemVO [field]repeatItemList: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findApplyPacsDict [parameter]query [field]orgId: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findApplyPacsDict [parameter]query [field]hospitalId: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findApplyEcgDict [parameter]query [field]orgId: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findApplyEcgDict [parameter]query [field]hospitalId: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findStudyCountByModality [parameter]dto [field]startDate: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findStudyCountByModality [parameter]dto [field]endDate: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]getOutTreateInfoForQuoteInCombine [parameter]outTreateId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outorder.controller.OutDocOrderController [method]findOutSettleMainIdList [parameter]outTreateId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.basereport.controller.BaseReportController [method]getDocumentNew [return]com.msun.his.app.mzemr.server.fileupload.entity.dto.DocumentResultDTO [field]success: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.basereport.controller.BaseReportController [method]getDocumentNew [return]com.msun.his.app.mzemr.server.fileupload.entity.dto.DocumentResultDTO [field]msg: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.basereport.controller.BaseReportController [method]getDocumentNew [return]com.msun.his.app.mzemr.server.fileupload.entity.dto.DocumentResultDTO [field]document: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.basereport.controller.BaseReportController [method]getDocumentNew [return]com.msun.his.app.mzemr.server.fileupload.entity.dto.DocumentResultDTO [field]Picture: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvisitrecord.controller.OutVisitRecordController [method]getDocWorkInfo [parameter]docId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvisitrecord.controller.OutVisitRecordController [method]getDocWorkInfo [parameter]deptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvisitrecord.controller.OutVisitRecordController [method]getOutVisitRecordById [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvisitrecord.controller.OutVisitRecordController [method]getOutVisitRecordById [parameter]referralRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.modifydata.controller.ModifyDataController [method]findModifyDataRecordById [parameter]businessDataId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]callNext [parameter]mzQueueId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]callNext [parameter]mzNextQueueId: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]updateQueueId: @ApiOperation annotation is not standardized [value, notes required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]updateQueueId [parameter]outEmrPatientDTO: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]getOutEmrPatientByRecordId [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]queryAvaiableOutVisitRecord [return]com.msun.his.app.mzemr.server.outemrpatient.entity.dto.OutEmrPatientAvaiableDTO [field]visitTime: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]restoreOutEmrPatient [parameter]emisTriageId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]getPatientByEmisTriageId [parameter]emisTriageId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]getPatientByEmisTriageId [return]com.msun.his.app.mzemr.server.outemrpatient.entity.po.OutEmrPatient: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]findOutEmrPatientByRegistInfo [parameter]deptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]findOutEmrPatientByRegistInfo [parameter]registerId: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]queryByPatId [parameter]patId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]queryByPatId [return]com.msun.his.app.mzemr.server.outemrpatient.entity.po.OutEmrPatient: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]invalidOutEmrPatient [parameter]emisTriageId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]call [parameter]mzQueueId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutEmrPatientController [method]call [parameter]mzNextQueueId: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutPatientController [method]getPatientBlacklast [parameter]patientId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutPatientController [method]findPatInfoById [parameter]patientId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutPatientController [method]findPatInfoById [return]com.msun.his.app.mzemr.server.manage.entity.vo.PatientInfoVO [field]patOutTime: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outemrpatient.controller.OutPatientController [method]getPatientById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]getOutEmrTextByOutVisitRecordId [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]getOutEmrTextByOutVisitRecordId [parameter]mrType: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]resetPrintFlag [parameter]outEmrMainId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]updatePrintFlag [parameter]outEmrMainId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]getPreviewTriage [parameter]registerId: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]getOutEmrByOutVisitRecordId [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]getOutEmrByOutVisitRecordId [parameter]mrType: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]updateOutEmrInvalidFlag [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]findOutEmrHistory [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]signOutEmrExtend [parameter]outEmrExtendId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]deleteOutEmrExtend [parameter]outEmrExtendId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]cancelSignOutEmrExtend [parameter]outEmrExtendId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]updateExtendPrintFlag [parameter]outEmrExtendId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]resetExtendPrintFlag [parameter]outEmrExtendId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]signNoQm [parameter]outEmrSignParamDTO [field]outEmrMainId: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]selectReportDetail [parameter]reportCommand [field]hospitalId: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]selectReportDetail [parameter]reportCommand [field]outExeOrderIds: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]selectReportDetail [parameter]reportCommand [field]dictOrderIds: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]selectReportDetail [parameter]reportCommand [field]outDocSignOrderIds: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]selectReportDetail [return]com.msun.his.app.mzemr.server.medicalrecord.outemr.entity.vo.ReportDetailVO [field]reportLisDetailDTOList: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]selectReportDetail [return]com.msun.his.app.mzemr.server.medicalrecord.outemr.entity.vo.ReportDetailVO [field]reportPacsDetailDTOList: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]selectReportDetail [return]com.msun.his.app.mzemr.server.medicalrecord.outemr.entity.vo.ReportDetailVO [field]reportEcgDetailDTOList: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]selectReportDetail [return]com.msun.his.app.mzemr.server.medicalrecord.outemr.entity.vo.ReportDetailVO [field]reportPisDetailDTOList: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]findEcgReportDetailInfo: @ApiOperation annotation is not standardized [value, notes required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]findEcgReportDetailInfo [parameter]ecgReportDetailInfo: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]findEcgReportDetailInfo [return]com.msun.his.app.mzemr.server.medicalrecord.outemr.entity.vo.EcgReportDetailInfo [field]checkTime: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]deleteOutEmrById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemr.controller.OutEmrController [method]sign [parameter]outEmrSignParamDTO [field]outEmrMainId: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemrtemplatecontent.controller.OutEmrTemplateContentController [method]getOutEmrTemplateContentById [parameter]outEmrTemplateId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemrtemplatecontent.controller.OutEmrTemplateContentController [method]saveEmrTemplateOrder: @ApiOperation annotation is not standardized [value, notes required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemrtemplatecontent.controller.OutEmrTemplateContentController [method]saveEmrTemplateOrder [parameter]outEmrTemplateNodeOrderDTOList: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemrtemplatecontent.controller.OutEmrTemplateContentController [method]getEmrTemplateOrder: @ApiOperation annotation is not standardized [value, notes required]
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.medicalrecord.outemrtemplatecontent.controller.OutEmrTemplateContentController [method]getEmrTemplateOrder [return]com.msun.his.app.mzemr.server.medicalrecord.outemrtemplatecontent.entity.dto.OutEmrTemplateNodeOrderDTO: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outrecommend.controller.RecommendationController [method]findRecommendTemplate [return]com.msun.his.app.mzemr.server.medicalrecord.outemrtemplate.entity.po.OutEmrTemplate: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.802Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outrecommend.controller.RecommendationController [method]findRecommendApplyProject [return]com.msun.his.app.mzemr.server.comm.entity.vo.ApplyProjectSearchVO [field]hisCreateTime: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outrecommend.controller.RecommendationController [method]findRecommendApplyProject [return]com.msun.his.app.mzemr.server.comm.entity.vo.ApplyProjectSearchVO [field]knowledgeBase: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outrecommend.controller.RecommendationController [method]findRecommendApplyProject [return]com.msun.his.app.mzemr.server.comm.entity.vo.ApplyProjectSearchVO [field]dictOrderVsNetworkList: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outrecommend.controller.RecommendationController [method]findRecommendDiagnoseBySymptom [parameter]symptomId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outrecommend.controller.CdssController [method]findSymptomVsPropertyDict [parameter]symptomName: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outrecommend.controller.CdssController [method]findSymptomAllInfoBySymptomName [parameter]symptomName: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outrecommend.controller.CdssController [method]findConcomitantSymptomBySymptomName [parameter]symptomName: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack]com.msun.his.app.mzemr.server.outrecommend.controller.OutRecommendApiController: @Api annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outordertemplate.controller.OutOrderTemplateController [method]findTemClass [return]com.msun.his.app.mzemr.server.comm.entity.vo.TemClassTreeVo [field]remark: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outordertemplate.controller.OutOrderTemplateController [method]deleteTemClass [parameter]orderTemplateClassId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.paperless.controller.MzPaperlessRecordLogController [method]getMzPaperlessRecordLogById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.informedconsent.controller.InformedConsentTemplateController [method]getById [parameter]informedConsentTemplateId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.informedconsent.controller.InformedConsentTemplateController [method]findByTemplateLevel [parameter]templateLevel: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.informedconsent.controller.InformedConsentController [method]getById [parameter]informedConsentId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.informedconsent.controller.InformedConsentController [method]findByOutVisitRecordId [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.informedconsent.controller.InformedConsentController [method]updatePrintFlag [parameter]informedConsentId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.resident360view.controller.Resident360ViewController [method]getInHosData [parameter]patId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.resident360view.controller.Resident360ViewController [method]getClinicData [parameter]patId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.resident360view.controller.Resident360ViewController [method]getClinicData [return]com.msun.his.app.mzemr.server.resident360view.entity.dto.ClinicDataDTO [field]patId: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvisitdiagnose.controller.OutVisitDiagnoseController [method]findDiagnoseByPatId [parameter]outVisitDiagnoseParam: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvisitdiagnose.controller.OutVisitDiagnoseController [method]deleteOutVisitDiagnoseById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvisitdiagnose.controller.OutVisitDiagnoseController [method]getOutVisitDiagnoseById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvisitdiagnose.controller.OutVisitDiagnoseController [method]findByPatId [parameter]outVisitDiagnoseParam: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvisitdiagnose.controller.OutVisitDiagnoseController [method]findDiagnoseByOutVisitRecordId [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inspectionresults.controller.InspectionResultsController [method]getReportDetailListChengWu [parameter]reportDetailRequestToType: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inspectionresults.controller.InspectionResultsController [method]getReportDetailListChengWu [return]com.msun.his.app.mzemr.server.inspectionresults.entity.vo.ReportDetail: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inspectionresults.controller.InspectionResultsController [method]reportQuote [parameter]reportQuoteRequest: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inspectionresults.controller.InspectionResultsController [method]reportQuote [return]com.msun.his.app.mzemr.server.inspectionresults.entity.vo.ReportQuoteResponse: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inspectionresults.controller.InspectionResultsController [method]getReasonsNotQuoted [return]com.msun.his.app.mzemr.server.inspectionresults.entity.vo.ReasonForNotQuotingPO: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inspectionresults.controller.InspectionResultsController [method]batchReportQuote [parameter]batchReportQuote: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inspectionresults.controller.InspectionResultsController [method]batchReportQuote [return]com.msun.his.app.mzemr.server.inspectionresults.entity.vo.ReportQuoteResponse: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.antibioticapply.controller.AntibioticApplyController [method]getDrugApplyDoc [parameter]deptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.antibioticapply.controller.AntibioticApplyController [method]selectReissue [parameter]countDTO [field]outVisitRecordId: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.antibioticapply.controller.AntibioticApplyController [method]selectReissue [parameter]countDTO [field]docId: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mrecord.controller.MrNoteLogController [method]queryNoteMarkLogs [parameter]noteId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mrecord.controller.MrNoteLogController [method]queryNoteLogContentById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mrecord.controller.MrNoteLogController [method]queryPrintLogs [parameter]noteId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mrecord.controller.MrNoteLogController [method]queryNoteLogs [parameter]noteId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mrecord.controller.MrNoteLogController [method]queryNoteLogs [parameter]pageNum: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.mrecord.controller.MrNoteLogController [method]queryNoteLogs [parameter]pageSize: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.elements.controller.MzEmrElementsController [method]findElements: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.elements.controller.MzEmrElementsController [method]findElements: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.elements.controller.MzEmrElementsController [method]saveElement [parameter]saveElementContentCommand: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.elements.controller.MzEmrElementsController [method]updateElement [parameter]updateElementContentCommand: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.elements.controller.MzEmrElementsController [method]deleteElement [parameter]updateElementContentCommand: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.elements.controller.MzEmrElementsController [method]saveElementCatalog [parameter]saveEmrElementCommand: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.elements.controller.MzEmrElementsController [method]updateElementCatalog [parameter]updateEmrElementCommand: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.elements.controller.MzEmrElementsController [method]deleteElementCatalog [parameter]updateEmrElementCommand: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.elements.controller.MzEmrElementContentsController [method]getEmrElementContentsById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.reportmessage.controller.MzMessageRecordController [method]queryMessageByBusinessId [return]com.msun.his.app.mzemr.server.reportmessage.entity.po.MzMessageRecord: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.reportmessage.controller.MzMessageRecordController [method]deleteReportRecordByIds [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.structured.controller.OutEmrNotesDetailController [method]queryStructuredDataByMrTypId: @ApiOperation annotation is not standardized [value, notes required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.structured.controller.OutEmrNotesDetailController [method]queryStructuredDataByMrTypId [parameter]queryStructuredNodeDTO: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.consultation.controller.ConsultationApiController [method]getMdtConsultationById [parameter]mdtConsultationId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.consultation.controller.ConsultationApiController [method]getMdtRecord [parameter]mdtConsultationId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.consultation.controller.ConsultationApiController [method]saveMdtconsultationApp [parameter]saveMdtConsultationCommand [field]mdtConsultationApplicationDTO: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.consultation.controller.ConsultationApiController [method]saveMdtconsultationApp [parameter]saveMdtConsultationCommand [field]mdtConsultationUserDTOS: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.consultation.controller.ConsultationApiController [method]updateMdtconsultationApp [parameter]updateMdtConsultationCommand [field]mdtConsultationApplicationDTO: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.consultation.controller.ConsultationApiController [method]updateMdtconsultationApp [parameter]updateMdtConsultationCommand [field]mdtConsultationUserDTOS: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outregister.controller.OutRegisterController [method]findRegisterChangeByRegisterId [parameter]registerId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outregister.controller.OutRegisterController [method]YesOrNoforWorkCode [parameter]hospitalId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outregister.controller.OutRegisterController [method]YesOrNoforWorkCode [parameter]workstationMachineCode: @ApiParam annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outregister.controller.OutRegisterController [method]healthOnline [parameter]workstationMachineCode: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outregister.controller.OutRegisterController [method]revokeRegister [parameter]registerId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outregister.controller.OutRegisterController [method]revokeRegister [parameter]registerDeptChangeId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.questionnaire.controller.QuestionnaireController [method]findQuestionnaire [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.questionnaire.controller.QuestionnaireController [method]findQuestionnaire [parameter]questionType: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inhospitalapply.api.InHospitalApplyController [method]getPatientById [parameter]id: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inhospitalapply.api.InHospitalApplyController [method]findDocInhospital [parameter]deptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inhospitalapply.api.InHospitalApplyController [method]findWardBySickroomDeptId [parameter]sickroomDeptId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.inhospitalapply.api.InHospitalApplyController [method]exportInHospitalApply [parameter]inHospitalApplyWorkParam: @ApiModel annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.womenchildreninfor.controller.WomenChildController [method]getWomanInformation [return]com.msun.his.app.mzemr.server.womenchildreninfor.entity.vo.McPhcAntenatalBookVO [field]antenatalId: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.womenchildreninfor.controller.WomenChildController [method]saveWomanInformation [parameter]mcPhcAntenatalSaveDTO [field]antenatalId: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.dictionary.controller.SysDictionaryDataController [method]findDicDatasByCode: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.cvdquestionnaire.controller.CovidQuestionnaireController [method]findCovidQuestionnaire [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.cvdquestionnaire.controller.CovidQuestionnaireController [method]findCovidQuestionnaire [parameter]questionType: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.casigninfo.controller.CaSignInfoController [method]getCaSignInfo [parameter]businessId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.icpcreasondiagnosis.controller.OutIcpcReasonDiagnosisController [method]invalidByOutVisitRecordId [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.icpcreasondiagnosis.controller.OutIcpcReasonDiagnosisController [method]findByOutVisitRecordId [parameter]outVisitRecordId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.msungpt.controller.MsunGptController [method]recommendApplyProject [return]com.msun.his.app.mzemr.server.comm.entity.vo.ApplyProjectSearchVO [field]hisCreateTime: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.msungpt.controller.MsunGptController [method]recommendApplyProject [return]com.msun.his.app.mzemr.server.comm.entity.vo.ApplyProjectSearchVO [field]knowledgeBase: @ApiModelProperty annotation is not standardized [value is required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.msungpt.controller.MsunGptController [method]recommendApplyProject [return]com.msun.his.app.mzemr.server.comm.entity.vo.ApplyProjectSearchVO [field]dictOrderVsNetworkList: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.drhealthrecords.controller.DrHealthRecordsController [method]getDRHealthRecords [parameter]healthRecordsDTO [field]cardType: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.drhealthrecords.controller.DrHealthRecordsController [method]getDRHealthRecords [return]com.msun.his.app.mzemr.server.drhealthrecords.dto.DrHealthRecordsDTO [field]cardType: @ApiModelProperty annotation missing!
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outprefixdiagnose.controller.OutPrefixDiagnoseController [method]findPrefixDiagnoseId [parameter]prefixDiagnoseId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.outvitalsigns.controller.OutVitalSignsController [method]queryById [parameter]patId: @ApiParam annotation is not standardized[value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.query.controller.MzEmrQueryController [method]findDepts: @ApiImplicitParam annotation is not standardized[name,value,example required]
+
+[2024-05-22T04:43:04.803Z] [ERROR] [CodePack][class]com.msun.his.app.mzemr.server.query.controller.MzEmrQueryController [method]findDepts: @ApiImplicitParam annotation is not standardized[name,value,example required]
