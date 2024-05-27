@@ -1,1 +1,66 @@
-(\/\*\*\n *\*([^\n]*)\n *\*\/)\n\s*private
+package com.msun.his.app.mzemr.server.subjectrecommend.dto;
+
+import io.swagger.annotations.ApiModelProperty;
+import com.msun.core.commons.api.BaseDTO;
+import io.swagger.annotations.ApiModel;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+import java.util.List;
+
+/**
+ * @classDesc: 功能描述: 数据采集结果出参
+ * @author: zhangchuandong
+ * @date: 2021/4/6 10:05
+ * @copyright 众阳健康
+ */
+@EqualsAndHashCode(callSuper = true)
+@Data
+@ApiModel("")
+public class SuperGradeDictSubjectDTO extends BaseDTO {
+	/**
+	 * 学科表主键
+	 */
+	@ApiModelProperty(value = " 学科表主键")
+	private Long subjectId;
+
+	/**
+	 * 学科编码
+	 */
+	@ApiModelProperty(value = " 学科编码")
+	private String subjectCode;
+
+	/**
+	 * 学科名称
+	 */
+	@ApiModelProperty(value = " 学科名称")
+	private String subjectName;
+
+	/**
+	 * 学科等级
+	 */
+	@ApiModelProperty(value = " 学科等级")
+	private Integer subjectGrade;
+
+	/**
+	 * 上级学科id
+	 */
+	@ApiModelProperty(value = " 上级学科id")
+	private Long superSubjectId;
+
+	/**
+	 * 学科顺序
+	 */
+	@ApiModelProperty(value = " 学科顺序")
+	private Integer subjectSort;
+
+	@ApiModelProperty(value = "memo",hidden = true)
+	private String memo;
+
+	/**
+	 * 二级学科集合
+	 */
+	@ApiModelProperty(value = " 二级学科集合",hidden = true)
+	private List<SecondGradeDictSubjectDTO> secondGradeDictSubjectDTOS;
+
+}

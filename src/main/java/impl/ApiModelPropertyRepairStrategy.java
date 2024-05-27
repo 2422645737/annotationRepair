@@ -50,6 +50,14 @@ public class ApiModelPropertyRepairStrategy implements RepairStrategy {
         result = matcher.replaceAll(regexResult);
         result = result.trim();
 
+        //处理ApiModelProperty("hello")的情况（无/**/注释）
+        commentRegex = "@ApiModelProperty\\(\\s*\"([^\"]+)\"\\)";
+        regexResult = "@ApiModelProperty(value = \"$1\")";
+        pattern = Pattern.compile(commentRegex);
+        matcher = pattern.matcher(result);
+        result = matcher.replaceAll(regexResult);
+        result = result.trim();
+
         writeFile(result,file);
     }
 }

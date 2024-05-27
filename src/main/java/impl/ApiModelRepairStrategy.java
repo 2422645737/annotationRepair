@@ -31,13 +31,14 @@ public class ApiModelRepairStrategy implements RepairStrategy {
             newContent.insert(index ,"@ApiModel(description = \"" + fill + "\")\n");
 
         }
-        //处理有ApiModel注解，但是注解不规范的情况
+        //处理有ApiModel注解，但是注解不规范的情况，例如ApiModel("abc")
         String commentRegex = "@ApiModel\\(\\s*\"([^\"]+)\"\\)";
         String regexResult = "@ApiModel(description = \"$1\")";
         Pattern pattern = Pattern.compile(commentRegex);
         Matcher matcher = pattern.matcher(newContent.toString());
         String result = matcher.replaceAll(regexResult);
         result = result.trim();
+
         writeFile(result,file);
     }
 }

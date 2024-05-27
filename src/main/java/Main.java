@@ -1,51 +1,29 @@
 import enums.RepairEnum;
 import factory.RepairStrategyFactory;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import utils.FileTypeUtil;
 
 import java.io.*;
+import java.util.Objects;
 
 
-
-public class Main {
-    public static void main(String[] args) throws IOException {
-//        String path = "E:\\Project\\ideaPro\\msun-his-app-mzemr\\msun-his-app-mzemr-server\\src\\main\\java\\com\\msun\\his\\app\\mzemr\\server";
-        String path = "C:\\Users\\24226\\Desktop\\test\\folder0";
-        getFiles(path);
-
-    }
-    private static void getFiles(String path){
-        File file = new File(path);
-        if(file.isDirectory()){
-            //获取文件夹下所有文件
-            File[] files = file.listFiles();
-            assert files != null;
-            for (File f : files) {
-                if(f.isDirectory()){
-                    getFiles(f.getPath());
-                }else{
-                    processFile(f);
-                }
-            }
-        }else{
-            processFile(file);
-        }
-    }
-
-    private static void processFile(File file){
-        if(FileTypeUtil.isDTOorVO(file.getName())){
-            //处理ApiModel注解
-            RepairStrategyFactory.build(RepairEnum.API_MODEL).repair(file);
-
-            //处理ApiModelProperty属性
-            RepairStrategyFactory.build(RepairEnum.API_MODEL_PROPERTY).repair(file);
-        }
-
-        //处理Controller对象
-        if(FileTypeUtil.isController(file.getName())){
-            //处理ApiParam注解
-            RepairStrategyFactory.build(RepairEnum.API_PARAM).repair(file);
-        }
+public class Main extends Application {
+    public static void main(String[] args) {
+        launch(args);
     }
 
 
+
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("RepairFrame.fxml")));
+        primaryStage.setTitle("Java注解修复工具");
+        primaryStage.setScene(new Scene(root, 800, 600));
+        primaryStage.show();
+    }
 }

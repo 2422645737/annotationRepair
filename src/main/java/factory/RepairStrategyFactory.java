@@ -3,6 +3,7 @@ package factory;
 import enums.RepairEnum;
 import impl.ApiModelPropertyRepairStrategy;
 import impl.ApiModelRepairStrategy;
+import impl.ApiOperationRepairStrategy;
 import impl.ApiParamRepairStrategy;
 import interfaces.RepairStrategy;
 
@@ -28,6 +29,9 @@ public class RepairStrategyFactory {
         }else if(name.equalsIgnoreCase(RepairEnum.API_MODEL_PROPERTY)){
             RepairStrategy repairStrategy = new ApiModelPropertyRepairStrategy();
             strategyMap.put(RepairEnum.API_MODEL_PROPERTY,repairStrategy);
+        }else if(name.equalsIgnoreCase(RepairEnum.API_OPERATION)){
+            RepairStrategy repairStrategy = new ApiOperationRepairStrategy();
+            strategyMap.put(RepairEnum.API_OPERATION,repairStrategy);
         }
         return strategyMap.get(name);
     }

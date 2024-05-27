@@ -9,7 +9,8 @@ import java.util.stream.Collectors;
 
 public interface RepairStrategy {
     /**
-     * 修复方法
+     * 修复逻辑
+     * @param file
      */
     void repair(File file);
 
@@ -28,9 +29,9 @@ public interface RepairStrategy {
     }
 
     /**
-     * 读取文件内容
+     * 写入文件
+     * @param content
      * @param file
-     * @return
      */
     default void writeFile(String content,File file){
         //读取文件内容
