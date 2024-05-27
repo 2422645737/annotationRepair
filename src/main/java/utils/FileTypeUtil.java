@@ -2,10 +2,10 @@ package utils;
 
 public class FileTypeUtil {
     public static boolean isVO(String fileName){
-        return isJavaFile(fileName) && (fileName.contains("VO.java") || fileName.contains("Vo.java") );
+        return isJavaFile(fileName) && (fileName.toLowerCase().contains("vo.java"));
     }
     public static boolean isDTO(String fileName){
-        return isJavaFile(fileName) && (fileName.contains("DTO.java") || fileName.contains("Dto.java"));
+        return isJavaFile(fileName) && (fileName.toLowerCase().contains("dto.java"));
     }
     public static boolean isDTOorVO(String fileName){
         return isVO(fileName) || isDTO(fileName);
@@ -14,6 +14,6 @@ public class FileTypeUtil {
         return fileName.contains(".java");
     }
     public static boolean isController(String fileName){
-        return isJavaFile(fileName) && fileName.contains("Controller");
+        return isJavaFile(fileName) && fileName.toLowerCase().contains("controller");
     }
 }

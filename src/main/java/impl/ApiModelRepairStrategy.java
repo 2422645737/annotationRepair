@@ -16,6 +16,7 @@ public class ApiModelRepairStrategy implements RepairStrategy {
     public void repair(File file) {
         String content = readFile(file);
         StringBuffer newContent = new StringBuffer(content);
+        String fill = FileTypeUtil.isDTO(file.getName()) ? "参数DTO" : "参数VO";
 
         //处理没有ApiModel注解的情况
         if(!content.contains("@ApiModel(")){
@@ -23,8 +24,6 @@ public class ApiModelRepairStrategy implements RepairStrategy {
             //导入相关依赖
             int indexOfImport = newContent.indexOf("import");
             newContent.insert(indexOfImport,"import io.swagger.annotations.ApiModel;\n");
-
-            String fill = FileTypeUtil.isDTO(file.getName()) ? "参数DTO" : "参数VO";
 
             //在类定义上方添加注解
             int index = newContent.indexOf("public class ");
@@ -39,6 +38,13 @@ public class ApiModelRepairStrategy implements RepairStrategy {
         String result = matcher.replaceAll(regexResult);
         result = result.trim();
 
+        //处理有ApiModel注解，但是注解不规范的情况，例如ApiModel("")
+        commentRegex = "@ApiModel\\(\\s*\"([^\"]*)\"\\)";
+        regexResult = "@ApiModel(description = \"" + fill + "\")";
+        pattern = Pattern.compile(commentRegex);
+        matcher = pattern.matcher(newContent.toString());
+        result = matcher.replaceAll(regexResult);
+        result = result.trim();
         writeFile(result,file);
     }
 }
