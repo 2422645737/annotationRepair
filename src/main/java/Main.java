@@ -9,7 +9,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 //        String path = "E:\\Project\\ideaPro\\msun-his-app-mzemr\\msun-his-app-mzemr-server\\src\\main\\java\\com\\msun\\his\\app\\mzemr\\server";
-        String path = "C:\\Users\\24226\\Desktop\\test";
+        String path = "C:\\Users\\24226\\Desktop\\test\\folder0";
         getFiles(path);
 
     }

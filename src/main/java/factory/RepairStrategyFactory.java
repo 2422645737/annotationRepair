@@ -5,13 +5,13 @@ import impl.ApiModelPropertyRepairStrategy;
 import impl.ApiModelRepairStrategy;
 import impl.ApiParamRepairStrategy;
 import interfaces.RepairStrategy;
-import sun.util.resources.Bundles;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class RepairStrategyFactory {
 
-    private static Map<String, RepairStrategy> strategyMap;
+    private static Map<String, RepairStrategy> strategyMap = new HashMap<>();
     public static RepairStrategy build(String name){
         if(name == null){
             return null;
