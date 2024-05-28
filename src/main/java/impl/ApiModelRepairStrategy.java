@@ -42,7 +42,7 @@ public class ApiModelRepairStrategy implements RepairStrategy {
         commentRegex = "@ApiModel\\(\\s*\"([^\"]*)\"\\)";
         regexResult = "@ApiModel(description = \"" + fill + "\")";
         pattern = Pattern.compile(commentRegex);
-        matcher = pattern.matcher(newContent.toString());
+        matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
         result = result.trim();
         writeFile(result,file);
