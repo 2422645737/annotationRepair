@@ -19,7 +19,7 @@ public class ApiModelRepairStrategy implements RepairStrategy {
         String fill = FileTypeUtil.isDTO(file.getName()) ? "参数DTO" : "参数VO";
 
         //处理没有ApiModel注解的情况
-        if(!content.contains("@ApiModel(")){
+        if(!content.contains("import io.swagger.annotations.ApiModel")){
             System.out.println("当前处理的文件---" + file.getAbsolutePath());
             //导入相关依赖
             int indexOfImport = newContent.indexOf("import");
@@ -45,6 +45,9 @@ public class ApiModelRepairStrategy implements RepairStrategy {
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
         result = result.trim();
+
+        //TODO: 处理单独只有一个@ApiModel的情况
+
         writeFile(result,file);
     }
 }
