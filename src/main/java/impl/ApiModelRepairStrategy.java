@@ -28,7 +28,6 @@ public class ApiModelRepairStrategy implements RepairStrategy {
             //在类定义上方添加注解
             int index = newContent.indexOf("public class ");
             newContent.insert(index ,"@ApiModel(description = \"" + fill + "\")\n");
-
         }
         //处理有ApiModel注解，但是注解不规范的情况，例如ApiModel("abc")
         String commentRegex = "@ApiModel\\(\\s*\"([^\"]+)\"\\)";
@@ -36,7 +35,6 @@ public class ApiModelRepairStrategy implements RepairStrategy {
         Pattern pattern = Pattern.compile(commentRegex);
         Matcher matcher = pattern.matcher(newContent.toString());
         String result = matcher.replaceAll(regexResult);
-        result = result.trim();
 
         //处理有ApiModel注解，但是注解不规范的情况，例如ApiModel("")
         commentRegex = "@ApiModel\\(\\s*\"([^\"]*)\"\\)";

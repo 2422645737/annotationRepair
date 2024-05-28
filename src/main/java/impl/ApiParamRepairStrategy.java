@@ -29,7 +29,6 @@ public class ApiParamRepairStrategy implements RepairStrategy {
         Pattern pattern = Pattern.compile(commentRegex);
         Matcher matcher = pattern.matcher(newContent.toString());
         String result = matcher.replaceAll(regexResult);
-        result = result.trim();
 
         //2、在(@RequestParam 前面添加ApiParam
         commentRegex = "\\(\\s*@RequestParam";
@@ -37,7 +36,6 @@ public class ApiParamRepairStrategy implements RepairStrategy {
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
-        result = result.trim();
 
         //3、在(@Validated 前面添加ApiParam
         commentRegex = "\\(\\s*@Validated";
@@ -45,7 +43,6 @@ public class ApiParamRepairStrategy implements RepairStrategy {
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
-        result = result.trim();
 
         //4、在(@NotNull 前面添加ApiParam
         commentRegex = "\\(\\s*@NotNull";
@@ -53,7 +50,6 @@ public class ApiParamRepairStrategy implements RepairStrategy {
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
-        result = result.trim();
 
         //5、在(@NotBlank 前面添加ApiParam
         commentRegex = "\\(\\s*@NotBlank";
@@ -61,7 +57,6 @@ public class ApiParamRepairStrategy implements RepairStrategy {
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
-        result = result.trim();
 
         //修复ApiParam不规范的情况
 
@@ -71,7 +66,6 @@ public class ApiParamRepairStrategy implements RepairStrategy {
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
-        result = result.trim();
 
         //2、修复@ApiParam("abc")
         commentRegex = "@ApiParam\\(\\s*(\\\"[^\\\"]+\\\")\\s*\\)";
@@ -79,7 +73,6 @@ public class ApiParamRepairStrategy implements RepairStrategy {
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
-        result = result.trim();
 
         //3、修复@ApiParam("")
         commentRegex = "@ApiParam\\(\\s*(\\\"[^\\\"]*\\\")\\s*\\)";

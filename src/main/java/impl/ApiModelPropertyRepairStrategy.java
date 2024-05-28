@@ -33,7 +33,7 @@ public class ApiModelPropertyRepairStrategy implements RepairStrategy {
         Pattern pattern = Pattern.compile(commentRegex);
         Matcher matcher = pattern.matcher(newContent.toString());
         String result = matcher.replaceAll(regexResult);
-//        result = result.trim();
+
 
         //处理ApiModelProperty(hidden = true)的情况（有/**/注释）
         commentRegex = "(\\/\\*\\*\\r\\n\\s*\\*([^\\r\\n]*)\\r\\n\\s*\\*\\/)\\r\\n\\s*@ApiModelProperty\\(hidden\\s=\\strue\\)";
@@ -41,14 +41,14 @@ public class ApiModelPropertyRepairStrategy implements RepairStrategy {
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
-//        result = result.trim();
+
         //处理ApiModelProperty(hidden = true)的情况（无/**/注释）
         commentRegex = "@ApiModelProperty\\(hidden\\s=\\strue\\)\\r\\n\\s*((private|protected|public)?\\s+([a-z]|[A-Z]|>|<)+\\s+(([a-z]|[A-Z])+)\\s*;)";
         regexResult = "@ApiModelProperty(value = \"$4\",hidden = true)\n\t$1";
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
-//        result = result.trim();
+
 
         //处理ApiModelProperty("hello")的情况（无/**/注释）
         commentRegex = "@ApiModelProperty\\(\\s*\"([^\"]+)\"\\)";
@@ -56,7 +56,7 @@ public class ApiModelPropertyRepairStrategy implements RepairStrategy {
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
-//        result = result.trim();
+        result = result.trim();
 
         writeFile(result,file);
     }

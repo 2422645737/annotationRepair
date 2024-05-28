@@ -25,7 +25,6 @@ public class ApiOperationRepairStrategy implements RepairStrategy {
         Pattern pattern = Pattern.compile(commentRegex);
         Matcher matcher = pattern.matcher(newContent.toString());
         String result = matcher.replaceAll(regexResult);
-        result = result.trim();
 
         //处理@ApiOperation("abc")
         commentRegex = "@ApiOperation\\(value\\s*=\\s*(\"[^\"]*\")\\)";
