@@ -35,7 +35,7 @@ public class ApiOperationRepairStrategy implements RepairStrategy {
         result = matcher.replaceAll(regexResult);
         result = result.trim();
 
-        //TODO:处理ApiOperation缺失的情况
+        //TODO: 处理ApiOperation缺失的情况
 
         writeFile(result,file);
     }
