@@ -12,7 +12,8 @@ import java.util.Map;
 
 public class RepairStrategyFactory {
 
-    private static Map<String, RepairStrategy> strategyMap = new HashMap<>();
+    private static final Map<String, RepairStrategy> strategyMap = new HashMap<>();
+
     public static RepairStrategy build(String name){
         if(name == null){
             return null;
@@ -21,17 +22,13 @@ public class RepairStrategyFactory {
             return strategyMap.get(name);
         }
         if(name.equalsIgnoreCase(RepairEnum.API_PARAM)){
-            RepairStrategy repairStrategy = new ApiParamRepairStrategy();
-            strategyMap.put(RepairEnum.API_PARAM,repairStrategy);
+            strategyMap.put(RepairEnum.API_PARAM,new ApiParamRepairStrategy());
         }else if(name.equalsIgnoreCase(RepairEnum.API_MODEL)){
-            RepairStrategy repairStrategy = new ApiModelRepairStrategy();
-            strategyMap.put(RepairEnum.API_MODEL,repairStrategy);
+            strategyMap.put(RepairEnum.API_MODEL,new ApiModelRepairStrategy());
         }else if(name.equalsIgnoreCase(RepairEnum.API_MODEL_PROPERTY)){
-            RepairStrategy repairStrategy = new ApiModelPropertyRepairStrategy();
-            strategyMap.put(RepairEnum.API_MODEL_PROPERTY,repairStrategy);
+            strategyMap.put(RepairEnum.API_MODEL_PROPERTY,new ApiModelPropertyRepairStrategy());
         }else if(name.equalsIgnoreCase(RepairEnum.API_OPERATION)){
-            RepairStrategy repairStrategy = new ApiOperationRepairStrategy();
-            strategyMap.put(RepairEnum.API_OPERATION,repairStrategy);
+            strategyMap.put(RepairEnum.API_OPERATION,new ApiOperationRepairStrategy());
         }
         return strategyMap.get(name);
     }

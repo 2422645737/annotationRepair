@@ -1,0 +1,19 @@
+((@RequestBody|@RequestParam)\s*(\((\s*name\s?=\s?)?\"([^\s]*)\"\))?\s*)(([a-z]|[A-Z])*\s*(([a-z]|[A-Z]|[0-9])*))
+$1@ApiParam(value = "$5",example = "示例参数") $6
+
+------ 注解无参数的情况
+(@RequestBody|@RequestParam)\s*(([a-z]|[A-Z]|[0-9]|>|<)+\s*(([a-z]|[A-Z]|[0-9])*))
+$1 @ApiParam(value = "$4",example = "示例参数") $2
+
+
+------ 注解有参数的情况   @RequestParam("你好") Object ofb2j1
+--- 不带name的
+((@RequestBody|@RequestParam)\s*(\(\s*\"([^\s]*)\"\s*\))+\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\s*(([a-z]|[A-Z]|[0-9])*))
+$1@ApiParam(value = "$4",example = "示例参数") $5
+
+
+--- 带name的
+((@RequestBody|@RequestParam)\s*(\((\s*name\s*=\s*)+\"([^\s]*)\"\s*\))+\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\s*(([a-z]|[A-Z]|[0-9])*))
+$1@ApiParam(value = "$5",example = "示例参数") $6
+
+

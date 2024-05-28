@@ -1,0 +1,16 @@
+public class TestController{
+    
+    @ApiOperation("hello")
+    public String getMessage(@RequestBody Object obj1,@RequestParam List<Object> obj2){
+        //do something
+
+    }
+
+    @ApiOperation("hello")
+    public String getMessage2(@RequestParam("你好") Object ofb2j1,@RequestParam(name = "世界") List<Object> obj2){
+        //do something
+    
+    }
+
+
+}

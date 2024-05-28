@@ -41,7 +41,6 @@ public class RepairFrame {
     @FXML
     void initialize() {
         this.logArea.setText("");
-//        this.dirLocaltion.setText("C:\\Users\\24226\\Desktop\\test\\folder0");
     }
 
     @FXML
@@ -63,7 +62,6 @@ public class RepairFrame {
     void selectFile(MouseEvent event) {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         directoryChooser.setTitle("打开文件夹");
-//        directoryChooser.setInitialDirectory(new File("C:\\Users\\24226\\Desktop\\test\\folder0"));
         File file = directoryChooser.showDialog(null);
         if(null != file){
             this.dirLocaltion.setText(file.getAbsolutePath());
@@ -100,6 +98,7 @@ public class RepairFrame {
      */
     private void processFile(File file){
         this.logArea.appendText(++count + " - 当前扫描的文件：" + file.getAbsolutePath() + "\n");
+        //处理DTO和VO对象
         if(FileTypeUtil.isDTOorVO(file.getName())){
             if(checkApiModel.isSelected()){
                 //处理ApiModel注解
