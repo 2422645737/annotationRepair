@@ -14,6 +14,9 @@ public class FileTypeUtil {
         return fileName.contains(".java");
     }
     public static boolean isController(String fileName){
-        return isJavaFile(fileName) && fileName.toLowerCase().contains("controller");
+        return isJavaFile(fileName) && fileName.toLowerCase().contains("controller.java");
+    }
+    public static boolean isAPI(String fileName){
+        return isJavaFile(fileName) && fileName.toLowerCase().contains("api.java");
     }
 }

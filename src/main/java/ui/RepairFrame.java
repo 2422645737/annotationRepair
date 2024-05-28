@@ -111,8 +111,8 @@ public class RepairFrame {
             }
         }
 
-        //处理Controller对象
-        if(FileTypeUtil.isController(file.getName())){
+        //处理Controller对象/API对象
+        if(FileTypeUtil.isController(file.getName()) || FileTypeUtil.isAPI(file.getName())){
             if(checkApiParam.isSelected()){
                 //处理ApiParam注解
                 RepairStrategyFactory.build(RepairEnum.API_PARAM).repair(file);
