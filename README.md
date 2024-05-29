@@ -6,7 +6,7 @@
 
 2、在使用工具前，首先要确保本地分支是最新代码。
 
-3、修复只针对于标准的类名称，比如`*DTO.java`,`*VO.java`,`*Controller.java`等
+3、修复只针对于标准的类名称，比如`*DTO.java`,`*VO.java`,`*Controller.java`,`*Api.java`等
 
 4、如果有不满足需求的修复方式，可以手动修改对应的正则，重新编译运行即可
 
@@ -256,4 +256,3 @@ public ResponseResult<List> example(@ApiParam(value = "请求参数",example = "
 
 }
 ```
-

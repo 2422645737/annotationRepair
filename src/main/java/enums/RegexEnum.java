@@ -60,6 +60,10 @@ public class RegexEnum {
         apiModelPropertyRegex.add(Pair.of("@ApiModelProperty\\(\\s*hidden\\s*=\\s*true\\s*\\)\\r\\n\\s*((private|protected|public)?\\s+([a-z]|[A-Z]|>|<)+\\s+(([a-z]|[A-Z]|[0-9]|_)+)\\s*;)","@ApiModelProperty(value = \"$4\",hidden = true)\n\t$1"));
         //处理ApiModelProperty("hello")的情况（无/**/注释）
         apiModelPropertyRegex.add(Pair.of("@ApiModelProperty\\(\\s*\"([^\"]+)\"\\)","@ApiModelProperty(value = \"$1\")"));
+        //TODO: 处理ApiModelProperty("")的情况（有/**/注释）
+        //apiModelPropertyRegex.add(Pair.of("(\\/\\*\\*\\r\\n\\s*\\*([^\\r\\n]*)\\r\\n\\s*\\*\\/)\\r\\n\\s*@ApiModelProperty\\(\\s*\\\"\\s*\\\"\\s*\\)","$1\n\t@ApiModelProperty(value = \"$2\")"));
+        //TODO: 处理ApiModelProperty("")的情况（无/**/注释）
+        apiModelPropertyRegex.add(Pair.of("@ApiModelProperty\\(\\s*\\\"\\s*\\\"\\s*\\)\\r\\n\\s*((private|protected|public)?\\s+([a-z]|[A-Z]|>|<)+\\s+(([a-z]|[A-Z]|[0-9]|_)+)\\s*;)","@ApiModelProperty(value = \"$4\")\n\t$1"));
     }
 
     public static List<Pair<String,String>> apiOperationRegex = new ArrayList<>();
