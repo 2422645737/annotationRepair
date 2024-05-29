@@ -26,11 +26,11 @@ public class RegexEnum {
         //在(@NotBlank 前面添加ApiParam
         apiParamRegex.add(Pair.of("\\(\\s*@NotNull","(@ApiParam(value = \"请求参数\",example = \"参数示例\") @NotNull"));
         //修复@RequestBody Object obj1
-        apiParamRegex.add(Pair.of("([\\(|,]+)\\s*(@RequestBody|@RequestParam)\\s*(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9])*))","$1$2 @ApiParam(value = \"$5\",example = \"示例参数\") $3"));
+        apiParamRegex.add(Pair.of("([\\(|,]+)\\s*(@RequestBody|@RequestParam)\\s*(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9]|_)*))","$1$2 @ApiParam(value = \"$5\",example = \"示例参数\") $3"));
         //修复@RequestParam("你好") Object ofb2j1
-        apiParamRegex.add(Pair.of("([\\(|,]+)\\s*((@RequestBody|@RequestParam)\\s*(\\(\\s*\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9])*))","$1$2@ApiParam(value = \"$5\",example = \"示例参数\") $6"));
+        apiParamRegex.add(Pair.of("([\\(|,]+)\\s*((@RequestBody|@RequestParam)\\s*(\\(\\s*\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9]|_)*))","$1$2@ApiParam(value = \"$5\",example = \"示例参数\") $6"));
         //修复@RequestParam(name = "你好") Object ofb2j1
-        apiParamRegex.add(Pair.of("([\\(|,]+)\\s*((@RequestBody|@RequestParam)\\s*(\\((\\s*name\\s*=\\s*)+\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9])*))","$1$2@ApiParam(value = \"$6\",example = \"示例参数\") $7"));
+        apiParamRegex.add(Pair.of("([\\(|,]+)\\s*((@RequestBody|@RequestParam)\\s*(\\((\\s*name\\s*=\\s*)+\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9]|_)*))","$1$2@ApiParam(value = \"$6\",example = \"示例参数\") $7"));
 
         /**
          * 修复不标准情况
@@ -57,7 +57,7 @@ public class RegexEnum {
         //处理ApiModelProperty(hidden = true)的情况（有/**/注释）
         apiModelPropertyRegex.add(Pair.of("(\\/\\*\\*\\r\\n\\s*\\*([^\\r\\n]*)\\r\\n\\s*\\*\\/)\\r\\n\\s*@ApiModelProperty\\(hidden\\s=\\strue\\)","$1\n\t@ApiModelProperty(value = \"$2\",hidden = true)"));
         //处理ApiModelProperty(hidden = true)的情况（无/**/注释）
-        apiModelPropertyRegex.add(Pair.of("@ApiModelProperty\\(hidden\\s=\\strue\\)\\r\\n\\s*((private|protected|public)?\\s+([a-z]|[A-Z]|>|<)+\\s+(([a-z]|[A-Z])+)\\s*;)","@ApiModelProperty(value = \"$4\",hidden = true)\n\t$1"));
+        apiModelPropertyRegex.add(Pair.of("@ApiModelProperty\\(\\s*hidden\\s*=\\s*true\\s*\\)\\r\\n\\s*((private|protected|public)?\\s+([a-z]|[A-Z]|>|<)+\\s+(([a-z]|[A-Z]|[0-9]|_)+)\\s*;)","@ApiModelProperty(value = \"$4\",hidden = true)\n\t$1"));
         //处理ApiModelProperty("hello")的情况（无/**/注释）
         apiModelPropertyRegex.add(Pair.of("@ApiModelProperty\\(\\s*\"([^\"]+)\"\\)","@ApiModelProperty(value = \"$1\")"));
     }
