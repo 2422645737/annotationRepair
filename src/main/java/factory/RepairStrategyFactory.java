@@ -22,13 +22,13 @@ public class RepairStrategyFactory {
             return strategyMap.get(name);
         }
         if(name.equalsIgnoreCase(RepairEnum.API_PARAM)){
-            strategyMap.put(RepairEnum.API_PARAM,new ApiParamRepairStrategy());
+            strategyMap.put(RepairEnum.API_PARAM,new ApiParamRepairStrategy(RepairEnum.API_PARAM));
         }else if(name.equalsIgnoreCase(RepairEnum.API_MODEL)){
-            strategyMap.put(RepairEnum.API_MODEL,new ApiModelRepairStrategy());
+            strategyMap.put(RepairEnum.API_MODEL,new ApiModelRepairStrategy(RepairEnum.API_MODEL));
         }else if(name.equalsIgnoreCase(RepairEnum.API_MODEL_PROPERTY)){
-            strategyMap.put(RepairEnum.API_MODEL_PROPERTY,new ApiModelPropertyRepairStrategy());
+            strategyMap.put(RepairEnum.API_MODEL_PROPERTY,new ApiModelPropertyRepairStrategy(RepairEnum.API_MODEL_PROPERTY));
         }else if(name.equalsIgnoreCase(RepairEnum.API_OPERATION)){
-            strategyMap.put(RepairEnum.API_OPERATION,new ApiOperationRepairStrategy());
+            strategyMap.put(RepairEnum.API_OPERATION,new ApiOperationRepairStrategy(RepairEnum.API_OPERATION));
         }
         return strategyMap.get(name);
     }
