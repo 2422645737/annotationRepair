@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import enums.RepairEnum;
+import enums.TranslateConst;
 import factory.RepairStrategyFactory;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -12,6 +13,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import org.apache.commons.lang3.StringUtils;
+import translate.TransApi;
 import utils.FileTypeUtil;
 
 public class RepairFrame {
@@ -32,12 +34,15 @@ public class RepairFrame {
 
     @FXML
     private CheckBox checkApiModelProperty;
-
+    @FXML
+    private CheckBox checkTranslate;
     @FXML
     private CheckBox checkApiParam;
     @FXML
     private TextField dirLocaltion;
     private Integer count;
+
+    private TransApi api;
     @FXML
     void initialize() {
         this.logArea.setText("");
@@ -122,4 +127,5 @@ public class RepairFrame {
             }
         }
     }
+
 }

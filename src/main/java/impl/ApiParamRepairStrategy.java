@@ -1,6 +1,7 @@
 package impl;
 
 import interfaces.RepairStrategy;
+import utils.TranslateUtil;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -24,25 +25,25 @@ public class ApiParamRepairStrategy implements RepairStrategy {
         //处理ApiParam缺失的情况
 
         //1、在(@RequestBody 前面添加ApiParam
-        String commentRegex = "\\(\\s*@RequestBody";
-        String regexResult = "(@ApiParam(value = \"请求参数\",example = \"参数示例\") @RequestBody";
+//        String commentRegex = "\\(\\s*@RequestBody";
+//        String regexResult = "(@ApiParam(value = \"请求参数\",example = \"参数示例\") @RequestBody";
+//        Pattern pattern = Pattern.compile(commentRegex);
+//        Matcher matcher = pattern.matcher(newContent.toString());
+//        String result = matcher.replaceAll(regexResult);
+
+        //2、在(@RequestParam 前面添加ApiParam
+//        commentRegex = "\\(\\s*@RequestParam";
+//        regexResult = "(@ApiParam(value = \"请求参数\",example = \"参数示例\") @RequestParam";
+//        pattern = Pattern.compile(commentRegex);
+//        matcher = pattern.matcher(result);
+//        result = matcher.replaceAll(regexResult);
+
+        //3、在(@Validated 前面添加ApiParam
+        String commentRegex = "\\(\\s*@Validated";
+        String regexResult = "(@ApiParam(value = \"请求参数\",example = \"参数示例\") @Validated";
         Pattern pattern = Pattern.compile(commentRegex);
         Matcher matcher = pattern.matcher(newContent.toString());
         String result = matcher.replaceAll(regexResult);
-
-        //2、在(@RequestParam 前面添加ApiParam
-        commentRegex = "\\(\\s*@RequestParam";
-        regexResult = "(@ApiParam(value = \"请求参数\",example = \"参数示例\") @RequestParam";
-        pattern = Pattern.compile(commentRegex);
-        matcher = pattern.matcher(result);
-        result = matcher.replaceAll(regexResult);
-
-        //3、在(@Validated 前面添加ApiParam
-        commentRegex = "\\(\\s*@Validated";
-        regexResult = "(@ApiParam(value = \"请求参数\",example = \"参数示例\") @Validated";
-        pattern = Pattern.compile(commentRegex);
-        matcher = pattern.matcher(result);
-        result = matcher.replaceAll(regexResult);
 
         //4、在(@NotNull 前面添加ApiParam
         commentRegex = "\\(\\s*@NotNull";
@@ -85,23 +86,23 @@ public class ApiParamRepairStrategy implements RepairStrategy {
         // 修复ApiParam缺失的问题
 
         //1、修复@RequestBody Object obj1
-        commentRegex = "(@RequestBody|@RequestParam)\\s*(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9])*))";
-        regexResult = "$1 @ApiParam(value = \"$4\",example = \"示例参数\") $2";
+        commentRegex = "([\\(|,]+)\\s*(@RequestBody|@RequestParam)\\s*(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9])*))";
+        regexResult = "$1$2 @ApiParam(value = \"$5\",example = \"示例参数\") $3";
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
 
 
         //2、修复@RequestParam("你好") Object ofb2j1
-        commentRegex = "((@RequestBody|@RequestParam)\\s*(\\(\\s*\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9])*))";
-        regexResult = "$1@ApiParam(value = \"$4\",example = \"示例参数\") $5";
+        commentRegex = "([\\(|,]+)\\s*((@RequestBody|@RequestParam)\\s*(\\(\\s*\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9])*))";
+        regexResult = "$1$2@ApiParam(value = \"$5\",example = \"示例参数\") $6";
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);
 
         //2、修复@RequestParam(name = "你好") Object ofb2j1
-        commentRegex = "((@RequestBody|@RequestParam)\\s*(\\((\\s*name\\s*=\\s*)+\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9])*))";
-        regexResult = "$1@ApiParam(value = \"$5\",example = \"示例参数\") $6";
+        commentRegex = "([\\(|,]+)\\s*((@RequestBody|@RequestParam)\\s*(\\((\\s*name\\s*=\\s*)+\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9])*))";
+        regexResult = "$1$2@ApiParam(value = \"$6\",example = \"示例参数\") $7";
         pattern = Pattern.compile(commentRegex);
         matcher = pattern.matcher(result);
         result = matcher.replaceAll(regexResult);

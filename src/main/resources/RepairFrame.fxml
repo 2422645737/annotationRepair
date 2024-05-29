@@ -21,18 +21,19 @@
             <Insets top="10.0" />
          </padding>
       </HBox>
-      <HBox layoutX="112.0" layoutY="67.0" prefHeight="60.0" prefWidth="597.0" spacing="10.0">
+      <HBox layoutX="15.0" layoutY="67.0" prefHeight="60.0" prefWidth="774.0" spacing="10.0">
          <children>
-            <CheckBox fx:id="checkApiParam" mnemonicParsing="false" prefHeight="60.0" prefWidth="124.0" selected="true" text="修复ApiParam" />
-            <CheckBox fx:id="checkApiModel" mnemonicParsing="false" prefHeight="65.0" prefWidth="124.0" selected="true" text="修复ApiModel" />
-            <CheckBox fx:id="checkApiModelProperty" mnemonicParsing="false" prefHeight="69.0" prefWidth="170.0" selected="true" text="修复ApiModelProperty" />
-            <CheckBox fx:id="checkApiOperation" mnemonicParsing="false" prefHeight="69.0" prefWidth="170.0" selected="true" text="修复ApiOperation" />
+            <CheckBox fx:id="checkApiParam" mnemonicParsing="false" prefHeight="60.0" prefWidth="189.0" selected="true" text="修复ApiParam" />
+            <CheckBox fx:id="checkApiModel" mnemonicParsing="false" prefHeight="60.0" prefWidth="178.0" selected="true" text="修复ApiModel" />
+            <CheckBox fx:id="checkApiModelProperty" mnemonicParsing="false" prefHeight="60.0" prefWidth="188.0" selected="true" text="修复ApiModelProperty" />
+            <CheckBox fx:id="checkApiOperation" mnemonicParsing="false" prefHeight="60.0" prefWidth="194.0" selected="true" text="修复ApiOperation" />
          </children>
          <padding>
             <Insets left="10.0" />
          </padding>
       </HBox>
-      <Button layoutX="317.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#repair" prefHeight="50.0" prefWidth="134.0" text="一键修复" />
+      <Button layoutX="335.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#repair" prefHeight="50.0" prefWidth="134.0" text="一键修复" />
       <TextArea fx:id="logArea" editable="false" layoutY="189.0" prefHeight="411.0" prefWidth="800.0" />
+      <CheckBox fx:id="checkTranslate" layoutX="60.0" layoutY="127.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="161.0" text="是否启用翻译功能" />
    </children>
 </Pane>
