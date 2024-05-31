@@ -21,10 +21,15 @@ import java.util.regex.Pattern;
 public abstract class AbstractRegexMatcher {
 
     /**
-     * 匹配正则和替换正则集合（）
+     * 匹配正则和替换正则集合
      */
     private List<Pair<String,String>> replaceRegex;
 
+    /**
+     * 使用构造函数初始化数组
+     * @param pattern
+     * @return
+     */
     public AbstractRegexMatcher(String pattern){
         if(RepairEnum.API_PARAM.equals(pattern))replaceRegex = RegexEnum.apiParamRegex;
         if(RepairEnum.API_MODEL.equals(pattern))replaceRegex = RegexEnum.apiModelRegex;

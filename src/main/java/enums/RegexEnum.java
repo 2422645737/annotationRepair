@@ -31,7 +31,8 @@ public class RegexEnum {
         apiParamRegex.add(Pair.of("([\\(|,]+)\\s*((@RequestBody|@RequestParam)\\s*(\\(\\s*\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9]|_)*))","$1$2@ApiParam(value = \"$5\",example = \"示例参数\") $6"));
         //修复@RequestParam(name = "你好") Object ofb2j1
         apiParamRegex.add(Pair.of("([\\(|,]+)\\s*((@RequestBody|@RequestParam)\\s*(\\((\\s*name\\s*=\\s*)+\\\"([^\\s]*)\\\"\\s*\\))+\\s*)(([a-z]|[A-Z]|[0-9]|>|<)+\\s*(([a-z]|[A-Z]|[0-9]|_)*))","$1$2@ApiParam(value = \"$6\",example = \"示例参数\") $7"));
-
+        //修复无RequestBody和RequestParam，只有单纯一个参数的注解，比如 public ResponseResult getDataJson(MzPdfFileDTO mzPdfFileDTO) {}
+        apiParamRegex.add(Pair.of("(public\\s*([a-z]|[A-Z]|>|<|_)+\\s*([a-z]|[A-Z]|>|<|_)+\\()(([a-z]|[A-Z]|>|<|_)+\\s*(([a-z]|[A-Z]|>|<|_)+)\\s*\\))","$1@ApiParam(value = \"$6\" , example = \"示例参数\") $4"));
         /**
          * 修复不标准情况
          */
