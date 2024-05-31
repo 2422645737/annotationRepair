@@ -62,7 +62,7 @@ public class RegexEnum {
         //处理ApiModelProperty("hello")的情况（无/**/注释）
         apiModelPropertyRegex.add(Pair.of("@ApiModelProperty\\(\\s*\"([^\"]+)\"\\)","@ApiModelProperty(value = \"$1\")"));
         //处理完全没有注解的情况
-        apiModelPropertyRegex.add(Pair.of("([;|\\{]\\s*)(private\\s*([a-z]|[A-Z]|>|<|_)+\\s*(([a-z]|[A-Z]|>|<|_)+))","$1@ApiModelProperty(value = \"$4\")\n\t$2"));
+        apiModelPropertyRegex.add(Pair.of("([;|\\{]\\s*)(private\\s*([a-z]|[A-Z]|>|<|_)+\\s*(([a-z]|[A-Z]|[0-9]|>|<|_)+))","$1@ApiModelProperty(value = \"$4\")\n\t$2"));
         //TODO: 处理ApiModelProperty("")的情况（有/**/注释）
         //apiModelPropertyRegex.add(Pair.of("(\\/\\*\\*\\r\\n\\s*\\*([^\\r\\n]*)\\r\\n\\s*\\*\\/)\\r\\n\\s*@ApiModelProperty\\(\\s*\\\"\\s*\\\"\\s*\\)","$1\n\t@ApiModelProperty(value = \"$2\")"));
         //TODO: 处理ApiModelProperty("")的情况（无/**/注释）
