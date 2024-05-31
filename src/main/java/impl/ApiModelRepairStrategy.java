@@ -23,7 +23,7 @@ public class ApiModelRepairStrategy extends AbstractRegexMatcher implements Repa
         String fill = FileTypeUtil.isDTO(file.getName()) ? "参数DTO" : "参数VO";
 
         //处理没有ApiModel注解的情况
-        if(newContent.indexOf("import io.swagger.annotations.ApiModel") == -1){
+        if(newContent.indexOf("import io.swagger.annotations.ApiModel;") == -1){
             //导入相关依赖
             int indexOfImport = newContent.indexOf("import");
             newContent.insert(indexOfImport,"import io.swagger.annotations.ApiModel;\n");
