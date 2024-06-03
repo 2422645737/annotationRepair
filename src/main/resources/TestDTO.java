@@ -27,10 +27,9 @@ public class ApplyProjectSearchVO extends BaseVO {
      */
 	@ApiModelProperty(value = " 部位id")
 	private Long bodypartId;
-    /**
-     * 部位名称
-     */
+
 	@ApiModelProperty(value = " 部位名称")
+	@NotNull
 	private String bodypartName;
     /**
      * 收集logo?
@@ -190,7 +189,8 @@ public class ApplyProjectSearchVO extends BaseVO {
 	@ApiModelProperty(value = "gptFlag")
 	private Integer gptFlag;
 
-    @ApiModelProperty(value = "dictOrderVsNetworkList")
+	@DateForMat
+	@ApiModelProperty(value = "dictOrderVsNetworkList")
 	private List<NetworkItemMedinsurInfoDTO> dictOrderVsNetworkList;
 
 }
