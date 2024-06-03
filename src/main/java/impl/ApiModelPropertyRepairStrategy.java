@@ -27,6 +27,19 @@ public class ApiModelPropertyRepairStrategy extends AbstractRegexMatcher impleme
             int indexOfImport = newContent.indexOf("import");
             newContent.insert(indexOfImport,"import io.swagger.annotations.ApiModelProperty;\n");
         }
-        writeFile(replace(newContent.toString()),file);
+        String replace = replace(newContent.toString());
+//        String compile = "\\s*\\/\\*\\*\\s*\\r\\n\\s*\\*\\s*([^\\r\\n]*)\\r\\n\\s*\\*\\/(((\\r\\n\\s*.*?)+)private\\s*([a-z]|[A-Z]|[0-9]|>|<|_)*\\s*([a-z]|[A-Z]|[0-9]|>|<|_)*;)";
+//        Matcher matcher = Pattern.compile(compile).matcher(replace);
+//
+//        while(matcher.find()){
+//            String group = matcher.group();
+//            String comment = Pattern.compile(compile).matcher(group).replaceAll("$1");
+//            System.out.println(group);
+//            if(!group.contains("ApiModelProperty")){
+//                String replace1 = group.replace("private", "@ApiModelProperty(value = \"" + comment + "\")\n\tprivate");
+//                replace = replace.replace(group,replace1);
+//            }
+//        }
+        writeFile(replace,file);
     }
 }

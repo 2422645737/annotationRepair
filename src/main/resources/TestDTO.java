@@ -41,7 +41,8 @@ public class ApplyProjectSearchVO extends BaseVO {
      * 创建时间
      */
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    private Date hisCreateTime;
+    @ApiModelProperty(value = 参数)
+	private Date hisCreateTime;
     /**
      * 医院id
      */
@@ -181,8 +182,8 @@ public class ApplyProjectSearchVO extends BaseVO {
     /**
      * 远程医嘱套餐id
      */
-	@DataJsonFormat()
-	@NotNull
+	@Json()
+	@ApiModelProperty(value = "远程医嘱套餐id")
 	private Long remoteOrderId;
 
 
