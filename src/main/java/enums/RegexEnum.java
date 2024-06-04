@@ -49,6 +49,8 @@ public class RegexEnum {
     static {
         //处理有ApiModel注解，但是注解不规范的情况，例如ApiModel("abc")
         apiModelRegex.add(Pair.of("@ApiModel\\(\\s*\"([^\"]+)\"\\)","@ApiModel(description = \"$1\")"));
+        //处理单纯的ApiModel注解
+        apiModelRegex.add(Pair.of("@ApiModel\\r\\n","@ApiModel(description = \"参数\")\n"));
     }
 
     public static List<Pair<String,String>> apiModelPropertyRegex = new ArrayList<>();
