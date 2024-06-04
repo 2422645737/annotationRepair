@@ -1,196 +1,79 @@
-package com.msun.his.app.mzemr.server.comm.entity.vo;
+package com.msun.middle.aggregate.clinic.server.outorder.entity.dto;
 
-import io.swagger.annotations.ApiModelProperty;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.msun.core.commons.api.BaseVO;
-import com.msun.his.app.mzemr.server.comm.entity.dto.NetworkItemMedinsurInfoDTO;
+import cn.hutool.core.collection.CollectionUtil;
+import com.alibaba.nacos.common.utils.CollectionUtils;
+import com.msun.core.commons.api.BaseDTO;
+import com.msun.core.commons.api.ResponseResult;
+import com.msun.middle.base.trade.api.outpatient.outtradeorder.entity.vo.OutTradeOrderVO;
+import com.msun.middle.business.outorder.api.outdocorder.dto.PatientDTO;
+import com.msun.middle.business.outorder.api.outdocorder.dto.outapplication.OutApplicationFormDTO;
+import com.msun.middle.business.outorder.api.outdocorder.dto.outpres.OutPresDetailsDTO;
+import com.msun.middle.business.outorder.api.outdocorder.dto.outpres.OutPresInfoDTO;
+import com.msun.middle.business.outorder.api.outdocorder.dto.outtreate.OutTreateInfoDTO;
+import com.msun.middle.business.outorder.api.outdocorder.enums.YesOrNoEnum;
+import com.sun.istack.internal.NotNull;
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.apache.zookeeper.Op;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
- * @classDesc: 申请单项目查询VO
- * @author: FangPeiTao
- * @date: 2022/8/10
- * @copyright 众阳健康
+ * @description:签名后返回的医嘱
+ * @fileName: OutSignOrderDataDTO
+ * @author: TongBo
+ * @createAt: 2021/3/29 17:58
+ * @updateBy: TongBo
+ * @remark: 众阳健康
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
-@ApiModel(description = "参数DTO")
-public class ApplyProjectSearchVO extends BaseVO {
-    /**
-     * 部位id
-     */
-	@ApiModelProperty(value = " 部位id")
-	private Long bodypartId;
+@ApiModel(description = "签名后返回的医嘱DTO")
+public class OutSignOrderFormDataDTO extends BaseDTO {
+	/**
+	 * 订单信息
+	 */
+	@ApiModelProperty(value = " 订单信息")
+	private List<OutTradeOrderVO> outTradeOrderVOS;
 
-	@ApiModelProperty(value = " 部位名称")
+
+	@NotEmpty
+	@ApiModelProperty(value = "outDeriveErrorMessage")
+	private String outDeriveErrorMessage;
+
+
+	@ApiModelProperty(value = "stockOccupyFailDetails")
+	private List<OutPresDetailsDTO> stockOccupyFailDetails;
+
+	/**
+	 * 是否自动执行
+	 */
 	@NotNull
-	private String bodypartName;
-    /**
-     * 收集logo?
-     */
-	@ApiModelProperty(value = " 收集logo?")
-	private String collectionLogo;
-    /**
-     * 创建时间
-     */
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    @ApiModelProperty(value = 参数)
-	private Date hisCreateTime;
-    /**
-     * 医院id
-     */
-	@ApiModelProperty(value = " 医院id")
-	private Long hospitalId;
-    /**
-     * 指示?
-     */
-	@ApiModelProperty(value = " 指示?")
-	private String indication;
-    /**
-     * 输入查询码
-     */
-	@ApiModelProperty(value = " 输入查询码")
-	private String inputCode;
-    /**
-     * 实验室项目id?
-     */
-	@ApiModelProperty(value = " 实验室项目id?")
-	private Long labItemId;
-    /**
-     * 项目金额
-     */
-	@ApiModelProperty(value = " 项目金额")
-	private BigDecimal orderAmount;
-    /**
-     * 项目类别
-     */
-	@ApiModelProperty(value = " 项目类别")
-	private Integer orderCategoryId;
-    /**
-     * 项目id
-     */
-	@ApiModelProperty(value = " 项目id")
-	private Long orderId;
-    /**
-     * 项目名称
-     */
-	@ApiModelProperty(value = " 项目名称")
-	private String orderName;
-    /**
-     * 机构id
-     */
-	@ApiModelProperty(value = " 机构id")
-	private Long orgId;
-    /**
-     * 部位级别
-     */
-	@ApiModelProperty(value = " 部位级别")
-	private Integer partLevel;
-    /**
-     * 推荐项目
-     */
-	@ApiModelProperty(value = " 推荐项目")
-	private String recommend;
-    /**
-     * 推荐id
-     */
-	@ApiModelProperty(value = " 推荐id")
-	private Long recommendId;
-    /**
-     * 报告id
-     */
-	@ApiModelProperty(value = " 报告id")
-	private Long reportItemId;
-    /**
-     * 样本id
-     */
-	@ApiModelProperty(value = " 样本id")
-	private Long sampleClassId;
-    /**
-     * 样本名称
-     */
-	@ApiModelProperty(value = " 样本名称")
-	private String sampleClassName;
-    /**
-     * 模态
-     */
-	@ApiModelProperty(value = " 模态")
-	private String modality;
-    /**
-     * 模态名称
-     */
-	@ApiModelProperty(value = " 模态名称")
-	private String modalityName;
-    /**
-     * 影响?
-     */
-	@ApiModelProperty(value = " 影响?")
-	private String effect;
-    /**
-     * 指示EPS?
-     */
-	@ApiModelProperty(value = " 指示EPS?")
-	private String indicationEPS;
-    /**
-     * 注意事项
-     */
-	@ApiModelProperty(value = " 注意事项")
-	private String mattersNeedingAttention;
-    /**
-     * 国家医保编码
-     */
-	@ApiModelProperty(value = " 国家医保编码")
-	private String nationalMedicalInsuranceCode;
-    /**
-     * 省级医保编码
-     */
-	@ApiModelProperty(value = " 省级医保编码")
-	private String provincialInsuranceCode;
+	@NotEmpty
+	@ApiModelProperty(value = "autoExecute")
+	private Boolean autoExecute;
 
-    /**
-     * 执行医院id
-     */
-	@ApiModelProperty(value = " 执行医院id")
-	private Long exeHospitalId;
-
-    /**
-     * 麻醉标识
-     */
-	@ApiModelProperty(value = " 麻醉标识")
-	private String supportAnes;
-
-    /**
-     * 互认平台标准编码
-     */
-	@ApiModelProperty(value = " 互认平台标准编码")
-	private String sharingCenterCode;
-
-    /**
-     *
-     */
-	@ApiModelProperty(value = "")
-	@Notnull
-	private String knowledgeBase;
-
-    /**
-     * 远程医嘱套餐id
-     */
-	@Json()
-	@ApiModelProperty(value = "远程医嘱套餐id")
-	private Long remoteOrderId;
+	/**
+	 * 判断是否需要皮试派生
+	 */
+	public boolean judgeSkinTestDerive() {
+		if (!CollectionUtils.isEmpty(outWestPresInfoList)) {
+			for (OutPresInfoDTO outPresInfoDTO : outWestPresInfoList) {
+				boolean result = outPresInfoDTO.getOutPresDetailsList().stream().anyMatch(p -> YesOrNoEnum.YES.getCode().equals(p.getSkinTestDerive()));
+				if (result) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 
 
-	@ApiModelProperty(value = "gptFlag")
-	private Integer gptFlag;
-
-	@DateForMat
-	@ApiModelProperty(value = "dictOrderVsNetworkList")
-	private List<NetworkItemMedinsurInfoDTO> dictOrderVsNetworkList;
 
 }
