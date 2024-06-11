@@ -103,6 +103,10 @@ public class RepairFrame {
      */
     private void processFile(File file){
         this.logArea.appendText(++count + " - 当前扫描的文件：" + file.getAbsolutePath() + "\n");
+        //非java文件直接跳过
+        if(!FileTypeUtil.isJavaFile(file.getName())){
+            return;
+        }
         //处理DTO和VO对象
         if(FileTypeUtil.isDTOorVO(file.getName())){
             if(checkApiModel.isSelected()){
