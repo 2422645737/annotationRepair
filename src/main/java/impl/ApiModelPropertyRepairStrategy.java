@@ -25,7 +25,9 @@ public class ApiModelPropertyRepairStrategy extends AbstractRegexMatcher impleme
         //如果当前文件中没有依赖，则首先添加依赖
         if(newContent.indexOf("io.swagger.annotations.ApiModelProperty") == -1){
             int indexOfImport = newContent.indexOf("import");
-            newContent.insert(indexOfImport,"import io.swagger.annotations.ApiModelProperty;\n");
+            if(indexOfImport != -1){
+                newContent.insert(indexOfImport,"import io.swagger.annotations.ApiModelProperty;\n");
+            }
         }
         String replace = replace(newContent.toString());
 
